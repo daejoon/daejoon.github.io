@@ -4,7 +4,7 @@ categories: springboot
 tags: java spring
 ---
 
->[Undertow](http://undertow.io/)는 NIO를 기반으로 하는 고성은 웹서버 입니다. 전반적으로 성능이 우수하고 메모리 사용이 효율적이라고 합니다. 
+>[Undertow](http://undertow.io/)는 NIO를 기반으로 하는 고성능 웹서버이다. 전반적으로 성능이 우수하고 메모리 사용이 효율적이다. 
 >[참고(Spring Boot Servlet Container)](https://www.baeldung.com/spring-boot-servlet-containers)
 
 ## 환경
