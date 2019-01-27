@@ -34,7 +34,7 @@ tags: java spring
     server.undertow.accesslog.suffix: log # Log file name suffix.
     ...
     ```
-    문서를 보면 톰켓 설정과 다르게 특이하게 prefix 부분에 `accessP_log.`로 마지막에 점(.)이 들어가 있고 `suffix`는 시작 부분에 점(.)이 빠져있다.
+    문서를 보면 톰켓 설정과 다르게 특이하게 prefix 부분에 `access_log.`로 마지막에 점(.)이 들어가 있고 `suffix`는 시작 부분에 점(.)이 빠져있다.
 
 ## 마치며
 스프링 부트의 디펜던시를 변경하는 것 만으로도 Tomcat에서 Undertow으로 `Embedded Servlet Container`을 변경할수 있다. 다시 한번 Spring Boot의 편리함을 느낄수 있다.
