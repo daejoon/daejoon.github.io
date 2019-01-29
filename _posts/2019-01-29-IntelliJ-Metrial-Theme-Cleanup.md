@@ -13,8 +13,7 @@ categories: intellij
 ## 해결방법
 - 플러그인을 제거(Uninstall) 한다.
 - [Plugin Setting 제거](https://intellij-support.jetbrains.com/hc/en-us/articles/206544519-Directories-used-by-the-IDE-to-store-settings-caches-plugins-and-logs)을 참고하여 설정중 `Metrial UI Theme`의 설정만 제거 한다.
-- **마지막으로 가장중요한** Custom Font 제거
-- Library > Preferences > IntelliJIdea2018.3 > jba_config > colors > 아래의 `_@user_Darcula.icls`, `_@user_Default.icls` 제거
+- **마지막으로 가장중요한** 설정에서 `File Status Colors` 제거 한다. `Library > Preferences > IntelliJIdea2018.3 > jba_config > colors` 아래의 `_@user_Darcula.icls`, `_@user_Default.icls` 제거
 - 파일은 테마에 따라서 다르게 생성될수 있다.
 
 ## 제거된 모습
