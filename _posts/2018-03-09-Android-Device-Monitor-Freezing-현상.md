@@ -2,6 +2,7 @@
 title: "Mac에서 Android Device Monitor Freezing 현상"
 date: 2018-03-09 00:21:00 +0900
 categories: mac
+tags: android
 ---
 
 맥에서 `IntelliJ IDEA`를 이용해서 안드로이드 프로그램을 개발하는데 어느 순간부터 `Android Device Monitor`의 프리징 현상이 나타났다. 이것 저것 별짓을 해봐도 안됐었는데 [Stackoverflow](https://stackoverflow.com/questions/47089757/android-device-monitor-freezes-on-mac-os-x)의 이것이 힌트가 되어서 해결하게 되었다.

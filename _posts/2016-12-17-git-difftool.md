@@ -1,5 +1,5 @@
 ---
-title: "git difftool"
+title: git difftool
 date: 2016-12-17 12:00:00 +0900
 categories: git
 ---

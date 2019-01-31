@@ -1,5 +1,5 @@
 ---
-title: "find for mac"
+title: find for mac
 date: 2016-12-19 11:00:00 +0900
 categories: mac
 ---

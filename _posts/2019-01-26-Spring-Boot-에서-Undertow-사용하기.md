@@ -1,7 +1,7 @@
 ---
 title:  Spring Boot에서 Undertow 사용하기
 categories: springboot
-tags: java spring
+tags: java springboot
 ---
 
 >[Undertow](http://undertow.io/)는 NIO를 기반으로 하는 고성능 웹서버이다. 전반적으로 성능이 우수하고 메모리 사용이 효율적이다. 

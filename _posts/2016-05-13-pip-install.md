@@ -1,5 +1,5 @@
 ---
-title: "Python virtualenv"
+title: Python virtualenv
 date: 2016-05-15 01:00:00 +0900
 categories: python
 ---

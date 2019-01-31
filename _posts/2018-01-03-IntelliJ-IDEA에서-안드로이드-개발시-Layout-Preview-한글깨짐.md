@@ -1,7 +1,7 @@
 ---
-title: "IntelliJ IDEA에서 안드로이드 개발시 Layout Preview 한글깨짐"
+title: IntelliJ IDEA에서 안드로이드 개발시 Layout Preview 한글깨짐
 date: 2018-01-03 11:49:00 +0900
-categories: mac
+categories: intellij
 ---
 
 [여기](http://thdev.tech/androiddev/2016/09/21/Android-Studio-Layout-Preview-Not-Korean.html)를 참고했다.

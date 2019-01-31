@@ -1,5 +1,5 @@
 ---
-title: "파이썬을 배워보자"
+title: 파이썬을 배워보자
 date: 2016-04-23 01:00:00 +0900
 categories: python
 ---
