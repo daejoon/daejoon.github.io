@@ -5,30 +5,77 @@ categories: docker
 
 > 현재는 주로 개발시에 한경 구축을 쉽게 만들기 위해서 사용하고 있다. 또한 gitlab의 배포에도 사용하고 있다.
 
-## 이미지
-- `docker search <image>`: Docker 저장소의 public 이미지를 검색한다.
-- `docker pull <image>:<tag>`: Docker 저장소로 부터 이미지를 가져온다.
-- `docker push <image>:<tag>`: Docker 저장소에 이미지를 업로드 한다.
-- `docker images`: 로컬의 이미지 목록
-- `docker rmi`: 로컬의 이미지 삭제
-    - `-f`: 이미지를 강제로 삭제
+## 원격저장소의 이미지를 검색
+```
+$ docker search <image>
+```
 
-## 컨테이너
-- `docker run -d -p <호스트포트>:<컨테이너포트> -e <컨테이너환경변수이름>:<컨테이너환경변수값> --name <컨테이너이름> <image>:<tag>`: 이미지로 컨테이너 실행
-    - `-d`: 백그라운드에서 컨테이너를 실행하고 Container ID 출력
-    - `-p`: Container 포트와 호스트 포트를 일치시킴
-    - `-e`: 환경변수 설정 `key=value`형식
-    - `--name`: 컨테이너이름 할당
-- `docker start <컨테이너이름>`: 컨테이너 시작
-- `docker restart <컨테이너이름>`: 컨테이너 재시작
-- `docker stop <컨테이너이름>`: 컨테이너 중지
-- `docker ps`: 실행중인 컨테이너 목록 확인
-    - `-a`: 모든 컨테이너 목록 확인
-- `docker rm`: 컨테이너 삭제
-    - `-f`: 컨테이너 강제 삭제 (실행중인 컨테이너에게 SIGKILL을 사용한다.)
-- `docker logs`: 컨테이너의 로그를 가져오다.
-    - `-f`: 출력된 순서데로 로그를 본다 (화면이 갱신됨), `tail -f` 옵션과 같다.
-    - `--tail <number>`: 마지막 출력 개수 만큰 로그 확인 
-- `docker exec -it <컨테이너이름> bash`: 컨테이너의 배쉬 실행
-    - `-i`: 인터렉티브 모드
-    - `-t`: 가상 TTY를 할당
+## 원격저장소의 이미지 가져오기
+```
+$ docker pull <image>:<tag>
+```
+
+## 원격저장소에 이미지 업로드
+```
+$ docker push <image>:<tag>
+```
+
+## 로컬 이미지 목록
+```
+$ docker images
+```
+
+## 로컬 이미지 삭제
+```
+$ docker rmi <image>:<tag>
+```
+- `-f`: 이미지를 강제로 삭제
+
+## 이미지로 컨테이너 실행
+```
+$ docker run -d -p <호스트포트>:<컨테이너포트> -e <컨테이너환경변수이름>:<컨테이너환경변수값> --name <컨테이너이름> <image>:<tag>
+```
+- `-d`: 백그라운드에서 컨테이너를 실행하고 Container ID 출력
+- `-p`: Container 포트와 호스트 포트를 일치시킴
+- `-e`: 환경변수 설정 `key=value`형식
+- `--name`: 컨테이너이름 할당
+
+## 컨테이너 시작
+```
+$ docker start <컨테이너이름>
+```
+## 컨테이너 재시작
+```
+$ docker restart <컨테이너이름>
+```
+
+## 컨테이너 중지
+```
+$docker stop <컨테이너이름>
+```
+
+## 컨테이너 목록
+```
+$ docker ps
+```
+- `-a`: 모든 컨테이너 목록 확인
+    
+## 컨테이너 삭제
+```
+$ docker rm <컨테이너이름>
+```
+- `-f`: 컨테이너 강제 삭제 (실행중인 컨테이너에게 SIGKILL을 사용한다.)
+    
+## 컨테이너 로그 보기
+```
+$ docker logs
+```
+- `-f`: 출력된 순서데로 로그를 본다 (화면이 갱신됨), `tail -f` 옵션과 같다.
+- `--tail <number>`: 마지막 출력 개수 만큰 로그 확인 
+
+## 컨테이너 배쉬 실행
+```
+$ docker exec -it <컨테이너이름> bash
+```
+- `-i`: 인터렉티브 모드
+- `-t`: 가상 TTY를 할당
