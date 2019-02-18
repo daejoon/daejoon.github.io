@@ -9,6 +9,7 @@ categories: Linux
 ### 파일 내용을 출력하는 명령어
 - cat
 - zcat
+- gzcat
 - xzcat
 - tail -f
 
@@ -28,4 +29,7 @@ categories: Linux
 ### 예제
 ```
 $ cat {확인하고 싶은 파일} | grep -i '{찾을문자열}' | grep -v '{제외할문자열}' | cut -d '{구분자}' -f {위치} | less
+```
+```
+$ gzcat -r *.gz | grep -i '{찾을문자열}' | grep -v '{제외할문자열}' | perl -pe 's/(\d+)/localtime($1)/e' | less
 ```
