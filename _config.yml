@@ -108,7 +108,7 @@ analytics:
 author:
   name             : "DaeJoon Ko"
   avatar           : "/assets/images/bio-photo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Happy developer"
+  bio              : "Software Engineer"
   #location         : "Seoul, Korea"
   email            : kkode1911@gmail.com
   links:
