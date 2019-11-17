@@ -59,3 +59,6 @@ spring.jpa.open-in-view=false
 요즘은 개발 환경 자체를 Docker를 이용해서 이미지화 해서 위에 설명한 내용 자체도 필요없을수도 있다.
 다만 조직이나 팀에서 사용하는게 아닌 개인이 간단하게 프로젝트를 생성해서 아이디어를 확인할때나 프로토타입을 만들고 싶을때
 쉽게 시작할수 있는 방법이라고 생각한다.
+
+## 참고
+[GitHub](https://github.com/daejoon/spring-boot-quick-start)
