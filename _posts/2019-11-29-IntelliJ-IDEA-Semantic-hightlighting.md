@@ -10,3 +10,8 @@ IntelliJ IDEA(이하 IJ)를 사용하다 보면은 참 소소한 기능이 많�
 ## Semantic Highlighting
 ![](/assets/images/IntelliJ-Semantic-highlighting.png)
 - `Preferences`->`Editor`->`Color Scheme`->`Language Defaults`->`Semantic highlighting`->[선택]
+
+## Identifiers
+![](/assets/images/IntelliJ-Semantic-highlighting 2.png)
+- `Preferences`->`Editor`->`Color Scheme`->`Language Defaults`->`Identifiers`->[선택]
+- Local variable, Parameter, Reassigned local variable, Reassigned parameter 항목의 `Foreground`를 원하는 색상으로 변경하면 파라미터와 변수의 색상이 변경된다. 단 이 기능은 `Semantic Highlighting` 기능이 켜져있으면 적용되지 않는다.
