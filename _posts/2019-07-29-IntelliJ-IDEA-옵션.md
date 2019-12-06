@@ -1,5 +1,5 @@
 ---
-title: "IntelliJ IDEA 2019.2 idea.vmoptions"
+title: "IntelliJ IDEA VM Options..."
 categories: intellij
 tags: mac
 ---
@@ -15,9 +15,10 @@ IntelliJ IDEA 버전업을 할때마다 점점 느려지더니 2019.1에 와서�
 2019.1.X 버전에서는 2기가의 Heap 메모리가 버티지 못해서 메모리 적다고 오류 발생했었다. 그래서 3기가로 올렸었다.
 이번에 2019.2 버전에서는 정말 쾌적하다 그래서 3기가에서 2기가로 힙 메모리를 다시 낮췄다.
 
-## custom IntelliJ IDEA VM options
-아래는 내가 사용하는 옵션이다.
+## Custom VM options
+- 위치: `Help -> Edit Custom VM Options...`
 
+아래는 내가 사용하는 옵션이다.
 ```
 -Xms2g
 -Xmx2g
@@ -38,7 +39,6 @@ IntelliJ IDEA 버전업을 할때마다 점점 느려지더니 2019.1에 와서�
 -Djava.net.preferIPv4Stack=true
 -Dfile.encoding=UTF-8
 ```
-
 - `Xms`: 초기 Heap 사이즈
 - `Xmx`: 최대 Heap 사이즈
 - `XX:ReservedCodeCacheSize`: 코드 캐쉬 사이즈 Heap 메모리 사이즈와 공유하지 않는다.
@@ -57,7 +57,6 @@ IntelliJ IDEA 버전업을 할때마다 점점 느려지더니 2019.1에 와서�
 - `Dsun.io.useCanonCaches`: Java의 정규화 캐시 사용여부
 - `Djava.net.preferIPv4Stack`: IP4를 사용여부
 - `Dfile.encoding`: Java 소스파일 인코딩
-
 
 ## 참고
 - [VM Option](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/java.html)
