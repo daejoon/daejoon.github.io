@@ -1,6 +1,6 @@
 ---
 title: "IntelliJ IDEA Services (구 Dashboard)"
-categories: tools
+categories: intellij
 tags: intellij springboot
 ---
 

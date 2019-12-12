@@ -1,6 +1,6 @@
 ---
 title: "IntelliJ IDEA Editor의 Selecting 색상 변경 방법"
-categories: tools
+categories: intellij
 tags: intellij
 ---
 

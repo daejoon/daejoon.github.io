@@ -1,6 +1,6 @@
 ---
 title: "IntelliJ IDEA Semantic Highlighting"
-categories: tools
+categories: intellij
 tags: intellij
 ---
 
