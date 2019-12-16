@@ -1,5 +1,5 @@
 ---
-title: "IntelliJ IDEA Editor의 Selecting 색상 변경 방법"
+title: "IntelliJ IDEA Editor의 Selected 색상 변경 방법"
 categories: intellij
 tags: intellij
 ---
@@ -8,10 +8,10 @@ tags: intellij
 >이럴때 선택된 파일의 색상을 조금 밝은 색으로 해주면 눈의 잘띄어서 편하다.
 
 ## Preferences의 설정 변경
-![](/assets/images/IntelliJ-IDEA-Editor-Tab-Selecting-Color-01.png)
+![](/assets/images/IntelliJ-IDEA-Editor-Tab-Selected-Color-01.png)
 - Preferences -> Editor -> Color Scheme -> General -> Editor -> Tabs -> Underline -> Background [선택]
 - 원하는 색상으로 변경(`318CFF`)
 
 ## 적용후
-![](/assets/images/IntelliJ-IDEA-Editor-Tab-Selecting-Color-02.png)
+![](/assets/images/IntelliJ-IDEA-Editor-Tab-Selected-Color-02.png)
 
