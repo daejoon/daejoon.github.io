@@ -34,7 +34,7 @@ $ docker run -v $OVPN_DATA:/etc/openvpn --rm -it kylemanna/openvpn vi /etc/openv
 push "comp-lzo no"
 push "route <vpc-ip> <vpc-netmask>"
 ```
-- `push "route <vpc-ip> <vpc-netmask>"`: 이부분을 추가해야지 이터넷 가능
+- `push "route <vpc-ip> <vpc-netmask>"`: 이부분을 추가해야지 인터넷 가능
 
 ### 클라이언트 유저 생성
 ```

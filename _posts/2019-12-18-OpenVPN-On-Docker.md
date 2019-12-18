@@ -100,7 +100,7 @@ $ docker run -v $OVPN_DATA:/etc/openvpn --rm -it kylemanna/openvpn vi /etc/openv
 push "comp-lzo no"
 push "route <vpc-ip> <vpc-netmask>"
 ```
-- `push "route <vpc-ip> <vpc-netmask>"`: 이부분을 추가해야지 이터넷 가능
+- `push "route <vpc-ip> <vpc-netmask>"`: 이부분을 추가해야지 인터넷 가능
 
 ## 참고
 - [Amazon ECS의 도커 기본 사항](https://docs.aws.amazon.com/ko_kr/AmazonECS/latest/developerguide/docker-basics.html)
