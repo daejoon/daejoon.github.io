@@ -76,19 +76,27 @@ $ docker run -v $OVPN_DATA:/etc/openvpn --rm -it kylemanna/openvpn easyrsa build
 
 ### 클라이언트 설정 파일 호스트(docker container to host)로 복사
 ```
-docker run -v $OVPN_DATA:/etc/openvpn --rm kylemanna/openvpn ovpn_getclient <client-user-name> > <client-user-name>.ovpn
+$ docker run -v $OVPN_DATA:/etc/openvpn --rm kylemanna/openvpn ovpn_getclient <client-user-name> > <client-user-name>.ovpn
 ```
 
 ### 클라이언트 제거
 ```
-docker run --rm openvpn ovpn_revokeclient <client-user-name> remove
+$ docker run --rm openvpn ovpn_revokeclient <client-user-name> remove
 ```
 
 ## VPN을 통한 인터넷 접속및 Private 네트워크 접속
-### /home/ec2-user/openvpn-data/openvpn.conf 수정
+### VI로 컨테이너 안의 /etc/openvpn/openvpn.conf 파일 오픈
+```
+$ docker run -v $OVPN_DATA:/etc/openvpn --rm -it kylemanna/openvpn vi /etc/openvpn/openvpn.conf
+```
+
+### 내용 추가
 ```
 ...
 ### Push Configurations Below
+#push "block-outside-dns"
+#push "dhcp-option DNS 8.8.8.8"
+#push "dhcp-option DNS 8.8.4.4"
 push "comp-lzo no"
 push "route <vpc-ip> <vpc-netmask>"
 ```
