@@ -27,6 +27,9 @@ $ docker run -v $OVPN_DATA:/etc/openvpn --rm -it kylemanna/openvpn vi /etc/openv
 ### 환경 설정 수정
 ```
 ...
+### Route Configurations Below
+route 192.168.254.0 255.255.255.0
+
 ### Push Configurations Below
 #push "block-outside-dns"
 #push "dhcp-option DNS 8.8.8.8"
@@ -35,12 +38,14 @@ push "comp-lzo no"
 push "route <vpc-ip> <vpc-netmask>"
 ```
 - `push "route <vpc-ip> <vpc-netmask>"`: 이부분을 추가해야지 인터넷 가능
+- 예) `push "10.10.0.0 255.255.0.0"`
 
-### 클라이언트 유저 생성
+### <a id='create-client-user'>클라이언트 유저 생성</a>
 ```
 $ docker run -v $OVPN_DATA:/etc/openvpn --rm -it kylemanna/openvpn easyrsa build-client-full <client-user-name> nopass
 ```
 - `<client-user-name>`:  클라이언트 접속 ID
+- `nopass`를 제거하면 아이디, 비밀번호 입력 방식으로 변경된다.
 
 ### 클라이언트 유저 OTP 활성화
 ```
@@ -62,6 +67,7 @@ $ docker run -v $OVPN_DATA:/etc/openvpn --rm kylemanna/openvpn ovpn_getclient <c
 [![](/assets/images/2019-12-19-OpenVPN-On-Docker-Two-factor-02.png)](/assets/images/2019-12-19-OpenVPN-On-Docker-Two-factor-02.png)
 1. `<client-user-name>` 명 입력
 2. Google Authenticator의 숫자 6개 입력
+3. [클라이언트 유저 생성](#create-client-user)시 'nopass'를 제거하면 이후 비밀번호 입력을 추가로 요청한다. 그럼 클라이언트의 비밀번호를 입력 
 
 
 ## 참고

@@ -60,19 +60,22 @@ Common Name (eg: your user, host, or server name) [Easy-RSA CA]: <common-name>
 ```
 - `<ca-password>`를 이용해서 유저를 생성한다
 - `<common-name>`은 Default 선택: 엔터 입력하면 된다.
+키 생성이 계속 무한대로 진행하는 경우가 있는데 그럴때는 `/home/ec2-user/openvpn-data`를 삭제하고 다시 진행한다.
 
 ### Open VPN 서버 실행
 ```
-$ docker run -v $OVPN_DATA:/etc/openvpn -d -p 1194:1194/udp --cap-add=NET_ADMIN kylemanna/openvpn
+$ docker run -v $OVPN_DATA:/etc/openvpn -d -p 1194:1194/udp --restart=always --cap-add=NET_ADMIN kylemanna/openvpn
 ```
-- `docker update --restart=always <container-id>` 커맨드를 실행시켜서 혹시나 docker 컨테이너가 실행이 중단되는 경우에도 곧바로 다시 restart가 되도록 설정
+- `--restart=always`:  커맨드를 실행시켜서 혹시나 docker 컨테이너가 실행이 중단되는 경우에도 곧바로 다시 restart가 되도록 설정
+- `--cap-add=NET_ADMIN`: Linux의 추가 기능을 사용 ([CAP_NET_ADMIN](https://linux.die.net/man/7/capabilities))
 
 ## OpenVPN 클라이언트 설정
-### 클라이언트 생성
+### 클라이언트 유저 생성
 ```
 $ docker run -v $OVPN_DATA:/etc/openvpn --rm -it kylemanna/openvpn easyrsa build-client-full <client-user-name> nopass
 ```
 - `<client-user-name>`: 클라이언트 접속 유저 이름
+- `nopass`를 제거하면 아이디, 비밀번호 입력 방식으로 변경된다.
 
 ### 클라이언트 설정 파일 호스트(docker container to host)로 복사
 ```
@@ -93,6 +96,9 @@ $ docker run -v $OVPN_DATA:/etc/openvpn --rm -it kylemanna/openvpn vi /etc/openv
 ### 환경 설정 수정
 ```
 ...
+### Route Configurations Below
+route 192.168.254.0 255.255.255.0
+
 ### Push Configurations Below
 #push "block-outside-dns"
 #push "dhcp-option DNS 8.8.8.8"
@@ -101,6 +107,7 @@ push "comp-lzo no"
 push "route <vpc-ip> <vpc-netmask>"
 ```
 - `push "route <vpc-ip> <vpc-netmask>"`: 이부분을 추가해야지 인터넷 가능
+- 예) `push "10.10.0.0 255.255.0.0"`
 
 ## 참고
 - [Amazon ECS의 도커 기본 사항](https://docs.aws.amazon.com/ko_kr/AmazonECS/latest/developerguide/docker-basics.html)
