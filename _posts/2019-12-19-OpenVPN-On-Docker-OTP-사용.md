@@ -1,11 +1,11 @@
 ---
-title: "OpenVPN Two-factor"
+title: "OpenVPN OTP 사용"
 categories: docker
-tags: aws openvpn docker
+tags: aws openvpn otp docker
 ---
 
 ## 목표
-Google-Authenticator를 이용해서 로그인한다.
+Google Authenticator를 이용해서 로그인한다.
 
 [OpenVPN on Docker](/2019/12/18/OpenVPN-On-Docker/)
 
@@ -42,7 +42,7 @@ $ docker run -v $OVPN_DATA:/etc/openvpn --rm -it kylemanna/openvpn easyrsa build
 ```
 - `<client-user-name>`:  클라이언트 접속 ID
 
-### 클라이언트 QR 코드 생성
+### 클라이언트 유저 OTP 활성화
 ```
 $ docker run -v $OVPN_DATA:/etc/openvpn --rm -i kylemanna/openvpn ovpn_otp_user <client-user-name>
 ```
