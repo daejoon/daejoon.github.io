@@ -86,6 +86,7 @@ $ docker run -v $OVPN_DATA:/etc/openvpn --rm kylemanna/openvpn ovpn_getclient <c
 ```
 $ docker run --rm openvpn ovpn_revokeclient <client-user-name> remove
 ```
+- 클라이언트 관련 문제가 발생하거나 기존 계정 삭제시 사용
 
 ## VPN을 통한 인터넷 접속및 Private 네트워크 접속
 ### vi로 컨테이너의 /etc/openvpn/openvpn.conf 파일 오픈
