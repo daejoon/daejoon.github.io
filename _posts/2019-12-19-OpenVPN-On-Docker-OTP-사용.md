@@ -66,7 +66,7 @@ $ docker run -v $OVPN_DATA:/etc/openvpn --rm kylemanna/openvpn ovpn_getclient <c
 ### Tunnelblick 접속
 [![](/assets/images/2019-12-19-OpenVPN-On-Docker-Two-factor-02.png)](/assets/images/2019-12-19-OpenVPN-On-Docker-Two-factor-02.png)
 1. `<client-user-name>` 명 입력
-2. Google Authenticator의 숫자 6개 입력
+2. Google Authenticator의 숫자 6개 입력, `-1`을 입력해도 된다.
 3. [클라이언트 유저 생성](#create-client-user)시 'nopass'를 제거하면 이후 비밀번호 입력을 추가로 요청한다. 그럼 클라이언트의 비밀번호를 입력 
 
 

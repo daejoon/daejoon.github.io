@@ -84,7 +84,7 @@ $ docker run -v $OVPN_DATA:/etc/openvpn --rm kylemanna/openvpn ovpn_getclient <c
 
 ### 클라이언트 제거
 ```
-$ docker run --rm openvpn ovpn_revokeclient <client-user-name> remove
+$ docker run --rm -it -v $OVPN_DATA:/etc/openvpn kylemanna/openvpn ovpn_revokeclient <client-user-name> remove
 ```
 - 클라이언트 관련 문제가 발생하거나 기존 계정 삭제시 사용
 
