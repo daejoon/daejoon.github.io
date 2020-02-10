@@ -1,10 +1,10 @@
 ---
-title: "Spring Boot 2.2.X 에서 Junit4로 변경하기"
+title: "Spring Boot 2.2.X 에서 JUnit4로 변경하기"
 categories: springboot
 tags: java springboot junit
 ---
 
-> Spring Boot 2.2.X 부터는 Junit5가 기본이다. 아직은 익숙하지 않기때문에 Junit4로 변경해서 사용한다.
+> Spring Boot 2.2.X 부터는 JUnit5가 기본이다. 아직은 익숙하지 않기때문에 JUnit4로 변경해서 사용한다.
 
 ## JUnit5 사용 
 ```
@@ -37,3 +37,4 @@ test {
 }
 ...
 ```
+- JUnit4 에서는 테스트 Class와 테스트 Method는 둘다 `Public` 이어야 한다.
