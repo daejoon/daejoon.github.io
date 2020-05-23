@@ -1,11 +1,11 @@
 ---
-title: "remote: HTTP Basic: Access denied"
+title: "Gitlab remote: HTTP Basic: Access denied"
 categories: git
-tags: git
+tags: git gitlab
 ---
 
 ## 목표
-> 로그인 정보가 일치하지 않을때 발생하는데 이럴때는 초기화 시키고 다시 설정하는 것이 편하다.
+> 로그인 정보가 일치하지 않을때 발생한다. 계정 정보를 초기화 하고 재 설정 한다.
 
 ## SYNOPSIS
 ```
@@ -50,10 +50,17 @@ credential.helper
 ```
 ## 초기화
 ```
-git config --system --unset credential.helper
+$ git config --system --unset credential.helper
 ```
+
+## Git push
+```
+$ git push
+```
+- `ID`, `PASSWORD`를 입력
 
 ## 계정 정보 저장
 ```
-git config credential.helep store
+$ git config credential.helep store
 ```
+- ID, PASSWORD를 저장한다.
