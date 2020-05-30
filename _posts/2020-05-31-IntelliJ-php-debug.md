@@ -22,7 +22,7 @@ tags: intellij php
 $ brew install php
 ```
 
-### xdeug 설치
+### xdebug 설치
 ```
 $ pecl install xdebug
 ```
