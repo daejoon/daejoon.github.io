@@ -64,3 +64,6 @@ $ git push
 $ git config credential.helep store
 ```
 - ID, PASSWORD를 저장한다.
+
+## 참고
+- [Git 도구 - Credential 저장소](https://git-scm.com/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-Credential-%EC%A0%80%EC%9E%A5%EC%86%8C)
