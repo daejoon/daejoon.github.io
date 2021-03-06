@@ -5,17 +5,17 @@ categories: aws
 ---
 
 ## 준 비 물
-- SSH key: `${keyName}.pem`
+- SSH key: `{keyName}.pem`
 - Terminal: 맥은 기본으로 탑재되어 있다.
 - Microsoft Remote Desktop: `App Store`에서 다운로드 한다.
 
 ## 실행 방법
-`${keyName}.pem` 파일이 있는 위치로 이동한다.
-`${keyName}.pem` 파일의  권한을 변경한다. (권한은 한번만 변경하면 된다.)
+`{keyName}.pem` 파일이 있는 위치로 이동한다.
+`{keyName}.pem` 파일의  권한을 변경한다. (권한은 한번만 변경하면 된다.)
 ```
-$ chmod 400 ${keyName}.pem
+$ chmod 400 {keyName}.pem
 ``` 
-해당 명령어를 입력 한다. `ssh -i ${keyName} ${loginName@vpnDomainName} -N -L ${localPort}:${remoteIp}:${remotePort}`
+해당 명령어를 입력 한다. `ssh -i {keyName} {loginName@vpnDomainName} -N -L {localPort}:{remoteIp}:{remotePort}`
 ```
 $ ssh -i sample.pem sample-user@vpn.sample.com -N -L 3389:10.10.10.10:3389
 ```
