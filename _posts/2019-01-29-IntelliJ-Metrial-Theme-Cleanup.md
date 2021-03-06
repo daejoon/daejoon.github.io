@@ -8,7 +8,7 @@ categories: intellij
 돌아오지 않는다는게 완전히 다른 테마가 되는건 아니고 VCS 폰트 색상이 Custom되는 버그 이다.
 아래 이미지를 확인하면 `* Customized`라고 표시된걸 확인할 수 있다.
 
-![](/assets/images/Preferences-2019-01-29-17-00-00.png)
+![](/assets/images/2019-01-29/Preferences-2019-01-29-17-00-00.png)
 
 ## 해결방법
 - 플러그인을 제거(Uninstall) 한다.
@@ -17,4 +17,4 @@ categories: intellij
 - 파일은 테마에 따라서 다르게 생성될수 있다.
 
 ## 제거된 모습
-![](/assets/images/Preferences-2019-01-29-17-50-44.png)
+![](/assets/images/2019-01-29/Preferences-2019-01-29-17-50-44.png)

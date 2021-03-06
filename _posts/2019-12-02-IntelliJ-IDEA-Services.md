@@ -8,8 +8,8 @@ tags: intellij springboot
 한탭에서 보는게 편하긴 하다.
 
 ## Edit Configurations...
-![](/assets/images/IntelliJ-IDEA-Services 1.png)
+![](/assets/images/2019-12-02/IntelliJ-IDEA-Services%201.png)
 
 ## Services
-![](/assets/images/IntelliJ-IDEA-Services 2.png)
+![](/assets/images/2019-12-02/IntelliJ-IDEA-Services%202.png)
 

@@ -29,7 +29,7 @@ $ mysql -h 127.0.0.1 -P <local-port> -u <aws-rds-user-id> -p <aws-rds-user-passw
 ## IntelliJ IDEA SSH Tunnel
 IntelliJ IDEA Ultimate는 Database Plugin을 통해서 SSH Tunneling을 지원한다.
 
-![](/assets/images/IntelliJ-IDEA-SSH-Tunneling-01.png)
+![](/assets/images/2019-12-15/IntelliJ-IDEA-SSH-Tunneling-01.png)
 1. use SSH tunnel [선택]
 2. Proxy Host: `<Bastion-Host>` 호스트 [입력]
 3. Proxy port: SSH 접속 포트, 기본적으로 22번으로 고정된다.
@@ -37,7 +37,7 @@ IntelliJ IDEA Ultimate는 Database Plugin을 통해서 SSH Tunneling을 지원�
 5. Auth type: Key pair (OpenSSH or Putty) [선택]
 6. Private key file: AWS 접속하기 위해 설정하게된 키페어의 개인키 여기서는 `<identity-file>`이 키페어 개인키이다.
 
-![](/assets/images/IntelliJ-IDEA-SSH-Tunneling-02.png)
+![](/assets/images/2019-12-15/IntelliJ-IDEA-SSH-Tunneling-02.png)
 1. Host: `<aws-rds-endpoint>` [입력]
 2. Port: `<aws-rds-port>` 인데 여기서는 MariaDB를 사용해서 기본은 3306을 사용한다. 3306 [입력]
 3. User: `<aws-rds-user-id>` [입력]

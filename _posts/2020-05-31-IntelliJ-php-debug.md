@@ -51,18 +51,18 @@ xdebug.profiler_output_dir=/tmp
 ```
 
 ### php 플러그인 설치
-[![](/assets/images/intellij-php-01.png)](/assets/images/intellij-php-01.png)
+[![](/assets/images/2020-05-31/intellij-php-01.png)](/assets/images/2020-05-31/intellij-php-01.png)
 
 ### IntelliJ IDEA 설정
-[![](/assets/images/intellij-php-02.png)](/assets/images/intellij-php-02.png)
-[![](/assets/images/intellij-php-03.png)](/assets/images/intellij-php-03.png)
+[![](/assets/images/2020-05-31/intellij-php-02.png)](/assets/images/2020-05-31/intellij-php-02.png)
+[![](/assets/images/2020-05-31/intellij-php-03.png)](/assets/images/2020-05-31/intellij-php-03.png)
 - Start Listening for PHP Debug connections 활성화
-[![](/assets/images/intellij-php-05.png)](/assets/images/intellij-php-05.png)
+[![](/assets/images/2020-05-31/intellij-php-05.png)](/assets/images/2020-05-31/intellij-php-05.png)
 
 ### 크롬 Xdebug helper 설치
-[![](/assets/images/intellij-php-04.png)](/assets/images/intellij-php-04.png)
+[![](/assets/images/2020-05-31/intellij-php-04.png)](/assets/images/2020-05-31/intellij-php-04.png)
 - Debug 활성화
-[![](/assets/images/intellij-php-06.png)](/assets/images/intellij-php-06.png)
+[![](/assets/images/2020-05-31/intellij-php-06.png)](/assets/images/2020-05-31/intellij-php-06.png)
 
 ## 참고
 - [IntelliJ IDEA Configuration Xdebug](https://www.jetbrains.com/help/idea/2020.1/configuring-xdebug.html?utm_campaign=IU&utm_content=2020.1&utm_medium=link&utm_source=product#)

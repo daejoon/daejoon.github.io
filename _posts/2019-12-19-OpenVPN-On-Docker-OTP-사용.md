@@ -53,7 +53,7 @@ $ docker run -v $OVPN_DATA:/etc/openvpn --rm -i kylemanna/openvpn ovpn_otp_user 
 ```
 
 ### Google Authenticator 인식
-[![](/assets/images/2019-12-19-OpenVPN-On-Docker-Two-factor-01.png)](/assets/images/2019-12-19-OpenVPN-On-Docker-Two-factor-01.png)
+[![](/assets/images/2019-12-18/2019-12-19-OpenVPN-On-Docker-Two-factor-01.png)](/assets/images/2019-12-18/2019-12-19-OpenVPN-On-Docker-Two-factor-01.png)
 1. QR코드 링크 Url로 들어가면 이미지가 보인다. Google Authenticator의 바코드 스캔을 한다.
 2. `Enter code From app (-1 to skip): ` 이부분에 인식된 OTP 코드 6자를 넣는다.
 3. `QR코드 링크`, `Emergency scratch codes`는 백업 해둔다.
@@ -64,7 +64,7 @@ $ docker run -v $OVPN_DATA:/etc/openvpn --rm kylemanna/openvpn ovpn_getclient <c
 ```
 
 ### Tunnelblick 접속
-[![](/assets/images/2019-12-19-OpenVPN-On-Docker-Two-factor-02.png)](/assets/images/2019-12-19-OpenVPN-On-Docker-Two-factor-02.png)
+[![](/assets/images/2019-12-18/2019-12-19-OpenVPN-On-Docker-Two-factor-02.png)](/assets/images/2019-12-18/2019-12-19-OpenVPN-On-Docker-Two-factor-02.png)
 1. `<client-user-name>` 명 입력
 2. Google Authenticator의 숫자 6개 입력, `-1`을 입력해도 된다.
 3. [클라이언트 유저 생성](#create-client-user)시 'nopass'를 제거하면 이후 비밀번호 입력을 추가로 요청한다. 그럼 클라이언트의 비밀번호를 입력 

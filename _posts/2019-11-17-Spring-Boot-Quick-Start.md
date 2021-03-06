@@ -10,31 +10,31 @@ tags: springboot java intellij
 아래 내용은 내가 주로 사용하는 환경(Mac, IntelliJ IDEA, Spring Boot)에서 쉽게 구성하는 방법이다.
 
 ## [Spring Boot Initializer](https://start.spring.io)
-![](/assets/images/Spring Initializr 01.png)
+![](/assets/images/2019-11-17/Spring%20Initializr%2001.png)
 - 이미지 참조 하여 프로젝트 설정
 
-![](/assets/images/Spring Initializr 02.png)
+![](/assets/images/2019-11-17/Spring%20Initializr%2002.png)
 - Web, Thymeleaf, JPA, DevTools, Lombok, H2 의존성 추가
 
 ## IntelliJ IDEA 에서 프로젝트 오픈
-![](/assets/images/Spring Initializr 03.png)
+![](/assets/images/2019-11-17/Spring%20Initializr%2003.png)
 - 빌드하면 Annotations Processors 오류가 발생
 
-![](/assets/images/Spring Initializr 04.png)
+![](/assets/images/2019-11-17/Spring%20Initializr%2004.png)
 - Preferences -> Build, Execution, Development -> Compiler -> Annotation Processors -> Enable Annotation Processing -> [선택]
 
 ## All Tests
-![](/assets/images/Spring Initializr 05.png)
+![](/assets/images/2019-11-17/Spring%20Initializr%2005.png)
 - 기본 단위테스트 툴인 JUnit4를 사용한다.
 - IntelliJ IDEA에서 전체 테스트를 검사하는 Configuration을 추가한다.
 
 ## Spring Boot DevTools
 DevTools과 IntelliJ IDEA를 이용하면 HotSwap이 가능하다.
 
-![](/assets/images/Spring Initializr 06-1.png)
+![](/assets/images/2019-11-17/Spring%20Initializr%2006-1.png)
 - Find Action... -> registry... -> compiler.automake.allow.when.app.running -> [선택]
 
-![](/assets/images/Spring Initializr 06-2.png)
+![](/assets/images/2019-11-17/Spring%20Initializr%2006-2.png)
 - Preferences -> Build, Execution, Development -> Compiler -> Build project automatically -> [선택]
 
 - application.properties [오픈]
@@ -44,12 +44,12 @@ spring.devtools.livereload.enabled=true
 spring.devtools.restart.enabled=false
 ```
 
-![](/assets/images/Spring Initializr 06-3.png)
+![](/assets/images/2019-11-17/Spring%20Initializr%2006-3.png)
 - Run/Debug Configurations -> On 'Update' action -> `Hot swap classes and updte trigger file if failed` -> [선택]
 - Run/Debug Configurations -> On frame deactivation -> `Update classes and resources` -> [선택]
 
 ## Run App
-![](/assets/images/Spring Initializr 07.png)
+![](/assets/images/2019-11-17/Spring%20Initializr%2007.png)
 - Open In View를 좋아하사는 사람도 싫어하는 사람도 있는데 개인적으로 득보다 실이 많다고 생각해서 `false`로 설정하고 사용하는 편이다.
 ```
 spring.jpa.open-in-view=false
