@@ -4,7 +4,7 @@ categories: gitlab
 tags: gitlab docker, m1
 ---
 
-> 맥북에어 M1 에서 Gitlab Delopy용 컨테이너 이미지를 빌드후 배포 시도하니 오류 발생
+> 맥북에어 M1 에서 Gitlab 배포용 컨테이너 이미지를 빌드후 배포 시도하니 오류 발생
 
 ## 오류 내용
 ```
@@ -27,4 +27,6 @@ $ docker buildx build --platform=linux/amd64 -t {image name}:{tag name} {Dockerf
 ```
 $ docker push {image name}:{tag name}
 ```
-- 사실 인텔용 이미지로만 빌드하면 됨.
+
+## 참고
+- [Docker Build multi platform images](https://docs.docker.com/buildx/working-with-buildx/#build-multi-platform-images)
