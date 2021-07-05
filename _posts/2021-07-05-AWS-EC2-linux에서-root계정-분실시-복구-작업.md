@@ -1,7 +1,7 @@
 ---
 title: "AWS EC2 linux에서 root 계정 분실시 복구 작업"
 categories: aws
-tags: aws linux ec2 linux
+tags: aws linux ec2
 ---
 
 ## 참고
