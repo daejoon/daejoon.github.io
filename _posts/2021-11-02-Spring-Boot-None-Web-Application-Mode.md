@@ -8,7 +8,7 @@ tags: java springboot
 > 싶을때가 있다.
 > 아래와 같이 하면 된다. 너무 간단하다.
 
-## application.properties
+## application.yml
 ```
 spring.main.web-application-type: none
 ```
