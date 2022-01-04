@@ -12,5 +12,25 @@ $ bundle exec jekyll serve --watch
 $ bundle update
 ```
 
+## 설치가 한방에 안될때
+* rbenv 설치
+* 최신 버전 루비 설치
+* 목록 확인
+```
+$ rbenv -l
+```
+* 최신버전 install
+```
+$ rbenv install {루비 버전}
+```
+* 해당 로컬에서만 루비 적용
+```
+$ ruby local {루비 버전}
+```
+* `Gemfile.lock` 삭제
+* `$ bundle update` 명령어 실행
+* `$ bundle exec jekyll serve --watch`
+
+
 ## 참고
 [Jekyll 설치](https://jekyllrb-ko.github.io/docs/installation/macos/)
