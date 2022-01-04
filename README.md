@@ -25,7 +25,7 @@ $ rbenv install {루비 버전}
 ```
 * 해당 로컬에서만 루비 적용
 ```
-$ ruby local {루비 버전}
+$ rbenv local {루비 버전}
 ```
 * `Gemfile.lock` 삭제
 * `$ bundle update` 명령어 실행
