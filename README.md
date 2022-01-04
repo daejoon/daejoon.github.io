@@ -11,3 +11,6 @@ $ bundle exec jekyll serve --watch
 ```
 $ bundle update
 ```
+
+## 참고
+[Jekyll 설치](https://jekyllrb-ko.github.io/docs/installation/macos/)
