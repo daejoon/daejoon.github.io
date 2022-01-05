@@ -17,7 +17,7 @@ $ bundle update
 * 최신 버전 루비 설치
 * 목록 확인
 ```
-$ rbenv -l
+$ rbenv install -l
 ```
 * 최신버전 install
 ```
