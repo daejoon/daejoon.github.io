@@ -61,4 +61,4 @@ spring.jpa.open-in-view=false
 쉽게 시작할수 있는 방법이라고 생각한다.
 
 ## 참고
-[GitHub](https://github.com/daejoon/spring-boot-quick-start)
+[GitHub](https://github.com/daejoon/study/tree/main/spring-boot-quick-start)
