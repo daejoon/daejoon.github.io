@@ -14,6 +14,9 @@ tags: intellij mac
 
 ### 기본 설정
 
+* 위치
+    * `Preferences` > `Tools` > `Actions on Save`
+
 ![기본](/assets/images/2022-03-20/default.png)
 
 ### 변경 설정
