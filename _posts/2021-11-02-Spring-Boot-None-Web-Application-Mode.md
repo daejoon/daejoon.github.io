@@ -9,7 +9,24 @@ tags: java springboot
 > 아래와 같이 하면 된다. 너무 간단하다.
 
 ## application.yml
+
 ```
 spring.main.web-application-type: none
 ```
-* [Spring Boot WebApplication Type](https://docs.spring.io/spring-boot/docs/current/api/org/springframework/boot/WebApplicationType.html) 
+
+* [Spring Boot WebApplication Type](https://docs.spring.io/spring-boot/docs/current/api/org/springframework/boot/WebApplicationType.html)
+
+## Java 코드로는 아래와 같다.
+
+```
+@SpringBootApplication
+public class WebApp {
+
+    public static void main(String[] args) {
+        final SpringApplication springApplication = new SpringApplication(WebApp.class);
+        springApplication.setWebApplicationType(WebApplicationType.NONE);
+        springApplication.run(args);
+    }
+}
+
+```
