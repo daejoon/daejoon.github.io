@@ -4,5 +4,3 @@ _site
 # Mac
 .DS_Store
 .idea/
-.ruby-version
-Gemfile.lock
