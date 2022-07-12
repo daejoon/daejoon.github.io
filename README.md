@@ -50,4 +50,5 @@ $ rbenv local {루비 버전}
 ## 참고
 
 * [Jekyll 설치](https://jekyllrb-ko.github.io/docs/installation/macos/)
+* [Jekyll 환경설정](https://jekyllrb-ko.github.io/docs/configuration/)
 * [bundler](https://bundler.io/)
