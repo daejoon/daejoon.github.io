@@ -5,13 +5,13 @@
 
 ## Local Jekyll 실행 방법
 
-```
+```shell
 $ bundle exec jekyll serve --watch
 ```
 
 ## Jekyll 라이브러리 업데이트
 
-```
+```shell
 $ bundle update
 ```
 
@@ -19,7 +19,7 @@ $ bundle update
 
 * rbenv 설치
 
-```
+```shell
 $ brew install rbenv
 ```
 
@@ -27,19 +27,19 @@ $ brew install rbenv
 
 * Ruby 목록 확인
 
-```
+```shell
 $ rbenv install -l
 ```
 
 * 최신버전 install
 
-```
+```shell
 $ rbenv install {루비 버전}
 ```
 
 * 해당 로컬에서만 루비 적용
 
-```
+```shell
 $ rbenv local {루비 버전}
 ```
 
