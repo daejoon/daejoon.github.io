@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "뚱2의 블로그"
+title                    : "결국 남는건 기록이다"
 title_separator          : "-"
 name                     : "DaeJoon Ko"
 description              : ""
@@ -108,7 +108,7 @@ analytics:
 author:
   name             : "Software Engineer"
   avatar           : "/assets/images/bio-photo.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "결국 남는건 기록이다"
+  bio              : "느리지만 조금씩 앞으로"
   location         : "Seoul, Korea"
   email            : kkode1911@gmail.com
   links:
