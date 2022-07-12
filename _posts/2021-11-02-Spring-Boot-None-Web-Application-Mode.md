@@ -10,7 +10,7 @@ tags: java springboot
 
 ## application.yml
 
-```
+``` yaml
 spring.main.web-application-type: none
 ```
 
@@ -18,12 +18,13 @@ spring.main.web-application-type: none
 
 ## Java 코드로는 아래와 같다.
 
-```
+``` java
 @SpringBootApplication
 public class WebApp {
 
     public static void main(String[] args) {
-        final SpringApplication springApplication = new SpringApplication(WebApp.class);
+        final SpringApplication springApplication 
+                = new SpringApplication(WebApp.class);
         springApplication.setWebApplicationType(WebApplicationType.NONE);
         springApplication.run(args);
     }
