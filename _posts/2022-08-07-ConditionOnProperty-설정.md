@@ -12,14 +12,17 @@ tags: spring java
 | "false"        | no             | no                 | yes                 | no                |
 | "foo"          | yes            | no                 | no                  | no                |
 
-* 여기서 중요한점은 Property Value가 `false`를 제외하고는 havingValue=""로 빈값이면 true라는 것이다.
+* Property Value가 `false`를 제외하고는 havingValue=""로 빈값이면 true 이다.
 * Custom 설정을 만들때 false 설정보다는 true 설정을 기본 설정으로 만드는게 유리하다
 
 ## 사용자 AutoConfiguration 예제
 
 * 아래는 Jackson Datetime의 사용자 정의 설정을 AutoConfigure로 하는 예제 이다.
-* 여려개의 Condition 어노테이션이 존재하면 그 여러개의 조건에 다 맞아야 한다.
+* 여러개의 Condition 어노테이션이 존재하면 그 여러개의 조건에 다 맞아야 한다.
 * 아래는 ObjectMapper의 Class가 존재하고 `custom.jackson.enabled=true`거나 선언이 안되어 있으면 `true`로 간주하는 것이다.
+* Spring Boot 조건 확인은
+  * `ConditionEvaluationReportLoggingListener` 클래스를 Debug 모드로 로그를 출력
+  * 아니면 jar 실행시 arguments 옵션에 --debug 추가
 
 ```java
 
