@@ -1,6 +1,6 @@
 ---
 title: "RequestMapping의 Consumes와 Produces"
-categories: spring  
+categories: 혼동되는것  
 tags: spring java
 ---
 
