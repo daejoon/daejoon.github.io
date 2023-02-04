@@ -61,18 +61,20 @@ IntelliJ IDEA 버전업을 할때마다 점점 느려지더니 2019.1에 와서�
 - `Djava.net.preferIPv4Stack`: IP4를 사용여부
 - `Dfile.encoding`: Java 소스파일 인코딩
 
-## 2022-05-04 기준 아래와 같이 사용한다
+## 2023-02-04 기준 아래와 같이 사용한다
 
 ```
-# custom IntelliJ IDEA VM options
+# Custom IntelliJ IDEA VM Options
 
 -Xms2048m
 -Xmx4096m
 
+-XX:+UseG1GC
+-XX:NewRatio=1
 -XX:MaxGCPauseMillis=50
 -XX:GCTimeRatio=19
--XX:ParallelGCThreads=4
--XX:ConcGCThreads=1
+-XX:ParallelGCThreads=8
+-XX:ConcGCThreads=2
 
 -Djava.net.preferIPv4Stack=true
 ```
