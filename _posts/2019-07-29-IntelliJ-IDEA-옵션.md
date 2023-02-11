@@ -71,8 +71,8 @@ IntelliJ IDEA 버전업을 할때마다 점점 느려지더니 2019.1에 와서�
 
 -XX:+UseG1GC
 -XX:NewRatio=1
--XX:MaxGCPauseMillis=50
--XX:GCTimeRatio=19
+-XX:MaxGCPauseMillis=100
+-XX:GCTimeRatio=24
 -XX:ParallelGCThreads=8
 -XX:ConcGCThreads=2
 
