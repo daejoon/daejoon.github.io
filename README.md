@@ -6,13 +6,13 @@
 ## Local Jekyll 실행 방법
 
 ```shell
-$ bundle exec jekyll serve --watch
+bundle exec jekyll serve --watch
 ```
 
 ## Jekyll 라이브러리 업데이트
 
 ```shell
-$ bundle update
+bundle update
 ```
 
 ## 설치가 한방에 안될때
@@ -20,7 +20,7 @@ $ bundle update
 * rbenv 설치
 
 ```shell
-$ brew install rbenv
+brew install rbenv
 ```
 
 ### 최신 버전 루비 설치
@@ -28,24 +28,24 @@ $ brew install rbenv
 * Ruby 목록 확인
 
 ```shell
-$ rbenv install -l
+rbenv install -l
 ```
 
 * 최신버전 install
 
 ```shell
-$ rbenv install {루비 버전}
+rbenv install {루비 버전}
 ```
 
 * 해당 로컬에서만 루비 적용
 
 ```shell
-$ rbenv local {루비 버전}
+rbenv local {루비 버전}
 ```
 
 * `Gemfile.lock` 삭제
-* `$ bundle update` 명령어 실행
-* `$ bundle exec jekyll serve --watch`
+* `bundle update` 명령어 실행
+* `bundle exec jekyll serve --watch`
 
 ## 참고
 
