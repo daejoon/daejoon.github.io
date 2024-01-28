@@ -1,8 +1,15 @@
 ---
-title: "editorconfig 사용해보기"
+title: "EditorConfig 사용해보기"
 categories: java
 tags: editorconfig java intellij
 ---
+
+# EditorConfig
+
+> EditorConfig는 여러 개발자가 다양한 편집기와 IDE에서 동일한 프로젝트를 작업할 때 일관된 
+> 코딩 스타일을 유지할 수 있도록 도와준다
+
+* 추가적으로 IntelliJ는 `.editorconfig`의 확장 속성을 지원하기 때문에 팀원 모두가 IntelliJ를 사용한다면 코드의 통일성을 맞추기 쉽다.
 
 ## 코드
 
