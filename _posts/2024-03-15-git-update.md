@@ -12,14 +12,10 @@ git을 사용하다 보면은 명령어가 길어져서 거추장 스러울때�
 그렇다고 GUI 툴을 사용하는것도 아니어서 브랜치 관련해서 업데이트 할려면 정말 귀찮아서 어떻게 하면
 줄일수 있을까 고민하다가 Shell function 만드는 것으로 해결 봤다.
 
-
-## 코드
-
-<script src="https://gist.github.com/daejoon/a05347f454ee63a13049c7b36c1b735a.js"></script>
-
 ## 사용 방법
 
 * `.zshrc` 에 코드를 넣는다.
+<script src="https://gist.github.com/daejoon/a05347f454ee63a13049c7b36c1b735a.js"></script>
 
 * 로컬과 원격 브랜치 동기화
 ```shell
