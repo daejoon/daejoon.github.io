@@ -17,16 +17,10 @@ git을 사용하다 보면은 명령어가 길어져서 거추장 스러울때�
 * `.zshrc` 에 코드를 넣는다.
 <script src="https://gist.github.com/daejoon/a05347f454ee63a13049c7b36c1b735a.js"></script>
 
-* 로컬과 원격 브랜치 동기화
-```shell
-git fetch --all
-```
-
 * 현재 브랜치를 최신화 한다. 브랜치 명을 선언하지 않으면 현재 브랜치 업데이트
 ```shell
 git-update
 ```
-
 * 현재 브랜치를 checkout 하지 않고 다른 브랜치를 업데이트 하는 방법
 ```shell
 git-update develop
