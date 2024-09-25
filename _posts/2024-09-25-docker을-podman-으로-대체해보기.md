@@ -1,6 +1,6 @@
 ---
 title: "Mac에서 Docker를 Podman으로 대체해보기 추가적으로 IntelliJ IDEA 호환성 유지"
-categories: shell
+categories: intellij docker
 tags: mac m1 docker podman
 ---
 
