@@ -49,17 +49,17 @@ brew install podman-desktop podman-compose
 ```shell
 sudo ln -s $(which podman) /usr/local/bin/docker
 sudo ln -s $(which podman-compose) /usr/local/bin/docker-compose
-sudo ln -s /Users/$USER/.local/share/containers/podman/machine/podman.sock /var/run/docker.sock
 ```
-
-* `/var/run`에 복사한건 재부팅 후에는 삭제 됩니다. 운영체제 구동시 복사해주는 로직을 넣어주면 편합니다.
 
 ## IntelliJ IDEA > Docker 설정
 
-* 이름 변경
-    * 이름 변경은 필수가 아닙니다. 기존 Docker와 구별을 위해서 변경했을 뿐 입니다. 그대로 사용해도 무방 합니다.
+```shell
+echo "unix:///Users/$USER/.local/share/containers/podman/machine/podman.sock"
+```
 
-![](/assets/images/2024-09-25/intellij-idea-podman.png)
+* 쉘 스크립트 결과를 Engin API URL에 입력합니다.
+
+![](/assets/images/2024-09-25/intellij-podman-engin-api-url.png)
 
 * 서비스 연결 확인
 
