@@ -51,6 +51,12 @@ sudo ln -s $(which podman) /usr/local/bin/docker
 sudo ln -s $(which podman-compose) /usr/local/bin/docker-compose
 ```
 
+* 환경 변수 추가
+
+```
+export DOCKER_HOST=unix:///Users/$USER/.local/share/containers/podman/machine/podman.sock
+```
+
 ## IntelliJ IDEA > Docker 설정
 
 ```shell
