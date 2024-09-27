@@ -37,7 +37,7 @@ brew install podman-desktop podman-compose
 
 ![](/assets/images/2024-09-25/docker-compatibility-enable.png)
 
-* Registries 에서 기존 Docker Hub 계정 등록
+* Registries 에서 기존 Docker Hub 계정 등록 합니다.
     * docker pulling시 이용 됩니다.
 
 ![](/assets/images/2024-09-25/docker-registries.png)
@@ -51,6 +51,8 @@ sudo ln -s $(which podman) /usr/local/bin/docker
 sudo ln -s $(which podman-compose) /usr/local/bin/docker-compose
 sudo ln -s /Users/$USER/.local/share/containers/podman/machine/podman.sock /var/run/docker.sock
 ```
+
+* `/var/run`에 복사한건 재부팅 후에는 삭제 됩니다. 운영체제 구동시 복사해주는 로직을 넣어주면 편합니다.
 
 ## IntelliJ IDEA > Docker 설정
 
